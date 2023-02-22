@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #2F3540;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -15,6 +15,71 @@
 }
 
 * {
-  margin: 0 auto;
+  margin: 0;
   
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.Calculator {
+
+  border-radius: 16px;
+  background-color: #73624D;
+
+  font-size: 24px;
+  font-weight: 600;
+
+  margin: 32px;
+  padding: 8px;
+
+}
+/* DIGITS DISPLAY */
+.Calculator .Display {
+  padding: 16px;
+  text-align: right;
+  background-color: dimgray;
+  border-radius: 4px;
+  margin-bottom: 4px;
+}
+
+.Calculator .Display span {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+/* CALCULATOR BUTTON  */
+.Calculator button {
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  font-size: 20px;
+  padding: 16px;
+  margin: 2px 2px;
+}
+
+/* CALCULATOR OPERATORS */
+.Calculator .Operators {
+  display: flex;
+}
+
+.Calculator .Operators button {
+  background-color: #BFA688;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+}
+
+/* CALCULATOR DIGITS */
+.Calculator .Digits {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+.Calculator .Digits button {
+   background-color: lightgray;
 }
