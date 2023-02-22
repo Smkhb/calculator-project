@@ -25,6 +25,9 @@ function App() {
   }
 
   const finalCalc = () => {
+    if(calc==''){
+      return
+    }
     setCalc(eval(calc).toString())
   }
 
@@ -34,6 +37,7 @@ function App() {
     }
     const value = calc.slice(0, -1);
     setCalc(value)
+    setResult(value)
   }
 
   const calculatorDigits = [7, 8, 9, 4, 5, 6, 1, 2, 3];

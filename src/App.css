@@ -51,7 +51,6 @@ body {
   font-size: 12px;
   font-weight: 400;
 }
-
 /* CALCULATOR BUTTON  */
 .Calculator button {
   cursor: pointer;
@@ -74,6 +73,10 @@ body {
   flex-basis: 0;
 }
 
+.Calculator .Operators button:hover {
+  background-color: #665b4e;
+}
+
 /* CALCULATOR DIGITS */
 .Calculator .Digits {
   display: grid;
@@ -82,4 +85,8 @@ body {
 
 .Calculator .Digits button {
    background-color: lightgray;
+}
+
+.Calculator .Digits button:hover {
+  background-color: darkgrey;
 }
